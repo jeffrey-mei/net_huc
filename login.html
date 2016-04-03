@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <title>账号登录--哈尔滨商业大学网络维护中心</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<script>$(document).ready(function(c) {
+	$('.close').on('click', function(c){
+		$('.login-form').fadeOut('slow', function(c){
+	  		$('.login-form').remove();
+		});
+	});	  
+});
+</script>
+</head>
+<body>
+    <div class="header">
+	    <h1>欢迎登录哈商大网络维护管理系统</h1>
+	</div>
+    <div class="center">
+    <div class="login-form">
+	<form>
+	     <input type="text" class="text" value="请输入账号" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}" >
+		    <div class="key">
+		         <input type="password" value="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+			</div>
+	</form>
+	<div class="signin">
+		<input type="submit" value="Login" >
+	</div>
+</div>
+	</div>
+    <div class="footer">
+        <!--<p><span><a href="#">哈尔滨商业大学</a></span><span><a href="#">教务处</a></span><span><a href="#">网络中心</a></span><span><a href="#">选课中心</a></span><span><a href="#">图书馆</a></span></p>-->
+        <p>&copy; 2016 哈尔滨商业大学网络维护中心&nbsp 版权所有 &nbsp &nbsp&nbsp|&nbsp&nbsp&nbsp Design By <em>Jeff_Mei</em></p>
+    </div>
+</body>
+</html>
